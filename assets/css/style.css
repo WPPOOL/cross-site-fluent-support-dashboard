@@ -1,0 +1,49 @@
+.fst_client_portal .fs_tk_header{
+    background: #ebeef4;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: block;
+    overflow: hidden;
+    padding: 10px 20px;
+    width: 100%;
+}
+.fst_client_portal .fs_tk_actions {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+}
+.fst_client_portal .fs_tk_body {
+    background: #ebeef3;
+    border: 1px solid #ebeef3;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.fst_client_portal .fs_table {
+    border-collapse: collapse;
+    color: #606266;
+    width: 100%;
+}
+.fst_client_portal .fs_table thead {
+    background-color: #fff;
+    border-bottom: 2px solid #ddd;
+    color: #646568;
+}
+.fst_client_portal .fs_table thead tr {
+    text-align: left;
+}
+.fst_client_portal .fs_table thead tr th {
+    font-weight: 500;
+    padding: 15px;
+}
+.fst_client_portal .fs_table td, .fst_client_portal .fs_table th {
+    border: 0;
+    padding: 12px 15px;
+    text-align: left;
+}
+.fst_client_portal .fst_pagi_wrapper {
+    padding: 10px 20px 20px;
+}
+.fst_client_portal .fst_pagi_wrapper {
+    margin-top: 20px;
+    text-align: right;
+}

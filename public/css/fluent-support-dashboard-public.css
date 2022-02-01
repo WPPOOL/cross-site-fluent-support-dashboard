@@ -1,0 +1,310 @@
+.fluent_form_4 .ticket-submit{
+    background-color: #ee5913 !important;
+}
+.fst_client_portal .fs_tk_actions {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+}
+.fst_client_portal .fs_tk_header{
+    background: #ebeef4;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: block;
+    overflow: hidden;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.fst_client_portal .fs_tk_actions .fs_tk_left, .fst_client_portal .fs_tk_actions .fs_tk_right {
+    float: left;
+    width: 50%;
+}
+.fst_client_portal .fs_button_groups {
+    display: inline-block;
+    line-height: 1;
+    vertical-align: middle;
+}
+.fst_client_portal .fs_btn {
+    -webkit-appearance: none;
+    background: #fff;
+    border: 1px solid #dcdfe6;
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: #606266;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+    margin: 0;
+    padding: 12px 20px;
+    text-align: center;
+    transition: all .3s cubic-bezier(.645,.045,.355,1);
+    vertical-align: middle;
+    white-space: nowrap;
+}
+.fst_client_portal .fs_button_groups button {
+    border-left: 0;
+    border-radius: 0;
+}
+
+.fst_client_portal .fs_button_groups button:first-child {
+    border-left: 1px solid #dcdfe6;
+    border-radius: 4px 0 0 4px;
+}
+.fst_client_portal .fs_button_groups button.fs_btn_active {
+    background-color: #409eff;
+    border-color: #409eff;
+    box-shadow: -1px 0 0 0 #409eff;
+    color: #fff;
+}
+.fst_client_portal .fs_tk_actions .fs_tk_right {
+    text-align: right;
+}
+.fst_client_portal .fs_btn.fs_btn_success {
+    background-color: #67c23a;
+    border-color: #67c23a;
+    color: #fff;
+}
+.fst_client_portal .fs_tk_body {
+    background: #ebeef3;
+    border: 1px solid #ebeef3;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.fst_client_portal .fs_table {
+    border-collapse: collapse;
+    color: #606266;
+    width: 100%;
+}
+.fst_client_portal .fs_table thead {
+    background-color: #fff;
+    border-bottom: 2px solid #ddd;
+    color: #646568;
+}
+.fst_client_portal .fs_table thead tr {
+    text-align: left;
+}
+.fst_client_portal .fs_table thead tr th {
+    font-weight: 500;
+    padding: 15px;
+}
+.fst_client_portal .fs_table td, .fst_client_portal .fs_table th {
+    border: 0;
+    padding: 12px 15px;
+    text-align: left;
+}
+.fst_client_portal .fst_pagi_wrapper {
+    padding: 10px 20px 20px;
+}
+.fst_client_portal .fst_pagi_wrapper {
+    margin-top: 20px;
+    text-align: right;
+}
+@media (min-width: 768px){
+    .frm-fluent-form .ff-t-container {
+        width: 118% !important;
+    }
+}
+.fst_client_portal .fs_tk_header {
+    background: #ebeef4;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: block;
+    overflow: hidden;
+    padding: 10px 20px;
+    width: 100%;
+}
+.fst_client_portal .fs_ticket .fs_tk_header {
+    padding: 20px;
+}
+.fst_client_portal .fs_th_header {
+    border-left: 0;
+    border-right: 0;
+    position: relative;
+}
+.fst_client_portal .fs_th_header>hgroup {
+    color: #111;
+    position: relative;
+}
+.fst_client_portal .fs_th_header .fs_tk_subject {
+    zoom: 1;
+    padding-right: 215px;
+    word-break: break-word;
+}
+.fst_client_portal .fs_th_header .fs_tk_subject h2 {
+    word-wrap: break-word;
+    color: #314351;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0;
+}
+.fst_client_portal .fs_th_header span.fs_ticket_id {
+    color: #93a1b0;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.fst_client_portal .fs_th_header .fs_tk_subject .fs_tk_tags {
+    display: inline-block;
+    padding-left: 20px;
+}
+.fst_client_portal .fs_badge {
+    background: #a5b2bd;
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12.5px;
+    font-weight: 400;
+    line-height: 14px;
+    margin: 0 4px 0 0;
+    padding: 4px 8px;
+    top: 6px;
+}
+.fst_client_portal .fs_badge.fs_badge_active {
+    background: #56c288;
+    text-transform: capitalize;
+}
+.fst_client_portal .fs_tk_actions {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+}
+.fst_client_portal .fs_th_header .fs_tk_actions {
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: -5px;
+    width: auto;
+}
+.fst_client_portal .fst_reply_box {
+    background: #fff;
+    padding: 15px 20px;
+}
+.fst_client_portal textarea.fs_reply_text {
+    background: #e5e9ec;
+    border: 1px solid #e5e9ec;
+    height: 60px!important;
+    padding: 15px 20px;
+    width: 100%!important;
+}
+.fst_client_portal .fs_threads_container {
+    background: #fff;
+}
+.fst_client_portal .fs_thread {
+    border-top: 1px solid #e5e9ec;
+    clear: both;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.fst_client_portal .fs_thread.fs_person_agent:before {
+    background: #1785eb;
+    color: #fff;
+    content: "Support Staff";
+    font-size: 10px;
+    left: 0;
+    padding: 5px 10px;
+    position: relative;
+    top: 0;
+}
+.fst_client_portal .fs_thread .fs_avatar {
+    background: #f1f3f5;
+    border-radius: 50%;
+    box-shadow: none;
+    float: left;
+    height: 46px;
+    margin: 25px 20px 25px 25px;
+    width: 46px;
+}
+.fst_client_portal .fs_thread .fs_avatar img {
+    border-radius: 50%;
+    max-height: 46px;
+    max-width: 46px;
+}
+.fst_client_portal .fs_thread_wrap {
+    margin: 0 25px 0 72px;
+    padding: 25px;
+}
+.fst_client_portal .fs_thread_wrap .fs_thread_message {
+    line-height: 150%;
+    overflow: auto;
+    width: 100%;
+}
+.fst_client_portal .fs_thread_wrap .fs_thread_head {
+    zoom: 1;
+    min-height: 40px;
+}
+.fst_client_portal .fs_thread_wrap .fs_thread_title {
+    color: #8494a5;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2em;
+    margin-bottom: 12px;
+}
+.fst_client_portal .fs_thread_wrap .fs_thread_title strong {
+    color: #253642;
+    font-weight: 600;
+}
+.fst_client_portal .fs_thread_wrap .fs_thread_actions {
+    color: #a5b2bd;
+    float: right;
+    font-size: 12px;
+    text-align: right;
+}
+.fst_client_portal .fs_thread_wrap .fs_thread_body {
+    color: #253642;
+    font-size: 14px;
+    line-height: 1.45em;
+    overflow-y: hidden;
+}
+
+.el-button--small {
+    border-radius: calc(var(--el-border-radius-base) - 1px);
+    font-size: 12px;
+    min-height: 32px;
+    padding: 9px 15px;
+}
+.el-button+.el-button {
+    margin-left: 10px;
+}
+.fst_client_portal a.el-button {
+    text-decoration: none;
+    background: #fff;
+    border: 2px solid;
+}
+.fst_client_portal .fs_table tbody tr {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+.fst_client_portal .fs_tk_preview {
+    color: #314351;
+    font-size: 13px;
+    text-decoration: none;
+}
+/* Loader */
+.overlay{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background: rgba(255,255,255,0.8) url("https://www.tutorialrepublic.com/examples/images/loader.gif") center no-repeat;
+}
+body{
+    text-align: center;
+}
+/* Turn off scrollbar when body element has the loading class */
+.fs_tk_body.loading{
+    overflow: hidden;   
+}
+/* Make spinner image visible when body element has the loading class */
+.fs_tk_body.loading .overlay{
+    display: block;
+}
