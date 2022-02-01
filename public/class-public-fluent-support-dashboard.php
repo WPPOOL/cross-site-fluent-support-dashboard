@@ -1,5 +1,5 @@
 <?php
-class Freshdesk_Appsero_Public
+class Fluent_Support_Dashboard_Public
 {
     public function __construct()
     {
@@ -9,12 +9,12 @@ class Freshdesk_Appsero_Public
 
     public function enqueue_styles()
     {
-        wp_enqueue_style('support-public-style', FRSHDESK_APPSERO_PUBLIC . '/css/freshdesk-support-public.css', array(), time(), 'all');
+        wp_enqueue_style('support-public-style', FlUENT_SUPPORT_PUBLIC . '/css/fluent-support-dashboard-public.css', array(), time(), 'all');
     }
 
     public function enqueue_scripts()
     {
-        wp_enqueue_script('support-public-js', FRSHDESK_APPSERO_PUBLIC . '/js/freshdesk-support-public.js', array('jquery'), time(), true);
+        wp_enqueue_script('support-public-js', FlUENT_SUPPORT_PUBLIC . '/js/fluent-support-dashboard-public.js', array('jquery'), time(), true);
     }
 }
-new Freshdesk_Appsero_Public();
+new Fluent_Support_Dashboard_Public();

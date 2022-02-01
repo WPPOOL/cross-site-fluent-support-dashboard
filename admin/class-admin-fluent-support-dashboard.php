@@ -1,5 +1,5 @@
 <?php
-class Freshdesk_Appsero_Admin {
+class Fluent_Support_Dashboard_Admin {
 
 	/**
 	 * all methods of this class instataite automatically
@@ -346,83 +346,67 @@ class Freshdesk_Appsero_Admin {
 
 	public function add_menu_under_settings_page() {
         add_options_page(
-            __('Appsero My Account Page To Freshdesk', 'appsero-freshdesk'),
-            __('Appsero to Freshdesk', 'appsero-freshdesk'),
+            __('Appsero My Account Page To Freshdesk', 'fluent-support'),
+            __('Appsero to Freshdesk', 'fluent-support'),
             'manage_options',
-            'freshdesk-settings',
-            array( $this, 'freshdesk_settings_field' )
+            'fluent-support-settings',
+            array( $this, 'fluent_support_settings_field' )
         );
     }
-	public function freshdesk_settings_field(){
+	public function fluent_support_settings_field(){
 		echo '<div class="wrap"><form method="post" action="options.php">';	
-		settings_fields( 'freshdesk-settings' ); // settings group name
-		do_settings_sections( 'freshdesk-settings' ); // just a page slug
+		settings_fields( 'fluent-support-settings' ); // settings group name
+		do_settings_sections( 'fluent-support-settings' ); // just a page slug
 		submit_button();
 		echo '</form></div>';
 	}
 
 	public function add_settings(){
 		add_settings_section(
-			'freshdesk_settings_section',
-			'Freshdesk Settings',
+			'fluent_support_settings_section',
+			'Fluent Support Settings',
 			array( $this,'settings_section' ),
-			'freshdesk-settings'
+			'fluent-support-settings'
 		);
 	
 		// Register a callback
 		register_setting(
-			'freshdesk-settings',
-			'freshdesk_domain',
+			'fluent-support-settings',
+			'fluent_support_wp_username',
 		);
 		// Register a callback
 		register_setting(
-			'freshdesk-settings',
-			'freshdesk_api',
+			'fluent-support-settings',
+			'fluent_support_app_pass',
 		);
-		register_setting(
-			'freshdesk-settings',
-			'slack_channel',
-		);
-		// Register the field for the "avatars" section.
+
 		add_settings_field(
-			'freshdesk_domain',
-			'Freshdesk Domain',
-			array($this, 'freshdesk_domain_field'),
-			'freshdesk-settings',
-			'freshdesk_settings_section',
-			array ( 'label_for' => 'freshdesk_api_domain' )
+			'fluent_support_wp_username',
+			'Fluent admin username',
+			array($this, 'fluent_support_wp_username_field'),
+			'fluent-support-settings',
+			'fluent_support_settings_section',
+			array ( 'label_for' => 'fluent_support_wp_username_label' )
 		);
 		add_settings_field(
-			'freshdesk_api',
-			'Freshdesk API',
-			array($this, 'freshdesk_api_field'),
-			'freshdesk-settings',
-			'freshdesk_settings_section',
-			array ( 'label_for' => 'freshdesk_api_label' )
-		);
-		add_settings_field(
-			'slack_channel',
-			'Slack Channel Webhook',
-			array($this, 'slack_webhook'),
-			'freshdesk-settings',
-			'freshdesk_settings_section',
+			'fluent_support_app_pass',
+			'Admin application password',
+			array($this, 'fluent_support_app_pass'),
+			'fluent-support-settings',
+			'fluent_support_settings_section',
 			array ( 'label_for' => 'slack_label' )
 		);
 	}
 	public function settings_section(){ ?>
 <?php }
 
-	public function freshdesk_domain_field($args){
-		$data = esc_attr( get_option( 'freshdesk_domain', '' ) );
-		printf( '<input type="text" name="freshdesk_domain" value="%1$s" id="%2$s" /><code> Your freshdesk domain name. Ex., yourcompany</code>', $data,$args['label_for'] );
+	public function fluent_support_wp_username_field($args){
+		$data = esc_attr( get_option( 'fluent_support_wp_username', '' ) );
+		printf( '<input type="text" name="fluent_support_wp_username" value="%1$s" id="%2$s" />', $data,$args['label_for'] );
 	}
-	public function freshdesk_api_field($args){
-		$data = esc_attr( get_option( 'freshdesk_api', '' ) );
-		printf( '<input type="text" name="freshdesk_api" value="%1$s" id="%2$s" /><code> Ref: <a href="https://support.freshdesk.com/support/solutions/articles/215517-how-to-find-your-api-key">https://support.freshdesk.com/support/solutions/articles/215517-how-to-find-your-api-key</a></code>', $data,$args['label_for'] );
-	}
-	public function slack_webhook($args){
-		$data = esc_attr( get_option( 'slack_channel', '' ) );
-		printf( '<input type="text" name="slack_channel" value="%1$s" id="%2$s" /><code> Ref: <a href="https://slack.com/apps/A0F7XDUAZ-incoming-webhooks" >https://slack.com/apps/A0F7XDUAZ-incoming-webhooks</a></code>', $data,$args['label_for'] );
+	public function fluent_support_app_pass($args){
+		$data = esc_attr( get_option( 'fluent_support_app_pass', '' ) );
+		printf( '<input type="text" name="fluent_support_app_pass" value="%1$s" id="%2$s" />', $data,$args['label_for'] );
 	}
 
 }
