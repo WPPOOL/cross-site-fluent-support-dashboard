@@ -1,6 +1,6 @@
 (function($) {
-    var username = 'saiful@wppool.dev';
-    var password = 'kJqM L5Vh qDtv QpYH 1Tjw JmYI';  
+    var username = auth_credentials.user_name;
+    var password = auth_credentials.user_pass;  
 
     $('.fs_button_groups .fs_btn').click(function(e){ 
         var status_type = e.target.innerText.toLowerCase();

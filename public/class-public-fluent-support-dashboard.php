@@ -15,6 +15,10 @@ class Fluent_Support_Dashboard_Public
     public function enqueue_scripts()
     {
         wp_enqueue_script('support-public-js', FlUENT_SUPPORT_PUBLIC . '/js/fluent-support-dashboard-public.js', array('jquery'), time(), true);
+        wp_localize_script('support-public-js', 'auth_credentials', array(
+            "user_name" => get_option('fluent_support_wp_username'),
+		    "user_pass" => get_option('fluent_support_app_pass')
+        ));
     }
 }
 new Fluent_Support_Dashboard_Public();
